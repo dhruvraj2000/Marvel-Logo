@@ -1,0 +1,38 @@
+.arc_reactor {
+    position: relative;
+    top: 50%;
+    margin-top: -125;
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 15px $color3
+    inset 0px 0px 50px 15px $color3;
+}
+
+.core2{
+    background: #cedce0;
+    width: 110px;
+    height: 110px;
+    @include border-radius(50%)
+    border: 5px solid $color1;
+    animation: flicker2 0.2s infinite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.e7 {
+    width: 95.25%;
+    height: 95.25%;
+    left: 2.5475;
+    right: 2.5475;
+    border: $size3 solid transparent;
+    background: transparent,
+    @include border-radius(50%)
+    transform: rotateZ(0deg)
+    transition: box-shadow 3s ease;
+    text-align: center
+    line-height: 100px;
+}
